@@ -3,120 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Sync IA - O Fim da Tela em Branco</title>
+    <title>Social Sync IA - Crie 7 Dias de Conteúdo Rápido</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-600 selection:text-white">
+<body class="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-600 selection:text-white relative overflow-x-hidden">
+
+    <!-- BACKGROUND PREMIUM DA PÁGINA (Imagem + Degradê) -->
+    <div class="absolute top-0 left-0 w-full h-[120vh] z-0 pointer-events-none">
+        <!-- Imagem abstrata com opacidade -->
+        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=2560" alt="Background" class="w-full h-full object-cover opacity-20 mix-blend-screen" />
+        <!-- Máscara para suavizar a transição para o fundo sólido -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/10 via-slate-950/80 to-slate-950"></div>
+    </div>
 
     <!-- HEADER / HERO SECTION -->
-    <header class="max-w-5xl mx-auto px-6 py-20 flex flex-col items-center text-center">
-        <div class="inline-block bg-blue-900/50 text-blue-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-blue-700/50">
+    <header class="relative z-10 max-w-5xl mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center">
+        
+        <!-- Luz de fundo (Glow) atrás do texto -->
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="inline-block bg-blue-500/10 backdrop-blur-md text-blue-300 px-5 py-2 rounded-full text-sm font-semibold mb-8 border border-blue-400/20 shadow-[0_0_20px_rgba(59,130,246,0.15)]">
             🚀 Lançamento Oficial - Vagas Limitadas
         </div>
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-            O Fim da Tela em Branco. <br/>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                Gere 7 Dias de Conteúdo em 10 Segundos.
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
+            Chega de travar na <br/> criação de conteúdos. <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400">
+                Gere 7 Dias em Menos de 5 Minutos.
             </span>
         </h1>
-        <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-3xl">
+        <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-3xl drop-shadow-md">
             Tenha acesso ao meu Agente de Inteligência Artificial privado. Ele cria roteiros de Reels, Carrosséis e legendas magnéticas com um único clique.
         </p>
         
-        <!-- VIDEO PLACEHOLDER -->
-        <div class="w-full max-w-4xl bg-slate-900 aspect-video rounded-2xl border border-slate-800 shadow-2xl flex items-center justify-center mb-10 relative overflow-hidden">
-            <p class="text-slate-500 font-medium z-10">[ Espaço para o seu Vídeo de Demonstração (VSL) ]</p>
+        <!-- VIDEO PLACEHOLDER COM EFEITO VIDRO -->
+        <div class="w-full max-w-4xl bg-white/5 backdrop-blur-xl aspect-video rounded-3xl border border-white/10 shadow-[0_0_50px_-12px_rgba(37,99,235,0.25)] flex items-center justify-center mb-10 relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent"></div>
+            <p class="text-slate-400 font-medium z-10 flex flex-col items-center gap-3">
+                <svg class="w-12 h-12 text-blue-500/50 group-hover:text-blue-400 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                [ Espaço para o seu Vídeo de Demonstração (VSL) ]
+            </p>
         </div>
 
-        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="bg-blue-600 hover:bg-blue-500 transition-all text-white font-bold text-xl px-12 py-5 rounded-xl shadow-[0_0_40px_-10px_rgba(37,99,235,0.7)] hover:scale-105">
-            QUERO ACESSAR O SOCIAL SYNC AGORA
+        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="relative group bg-blue-600 hover:bg-blue-500 transition-all text-white font-bold text-xl px-12 py-5 rounded-2xl overflow-hidden hover:scale-105">
+            <div class="absolute inset-0 bg-white/20 translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-500"></div>
+            <span class="relative z-10">QUERO ACESSAR O SOCIAL SYNC AGORA</span>
         </a>
-        <p class="mt-4 text-sm text-slate-500 flex items-center gap-2">
-            🔒 Pagamento 100% Seguro via Kiwify
+        <p class="mt-5 text-sm text-slate-400 flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            Pagamento 100% Seguro via Kiwify
         </p>
     </header>
 
     <!-- SEÇÃO DA DOR / HISTÓRIA -->
-    <section class="bg-slate-900 border-y border-slate-800 py-20 px-6">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+    <section class="relative z-10 bg-slate-950 border-y border-white/5 py-24 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-16 items-center">
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-6">Por que eu criei o Social Sync?</h2>
-                <p class="text-slate-300 mb-4 leading-relaxed">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">Por que eu criei o <span class="text-blue-400">Social Sync?</span></h2>
+                <p class="text-slate-400 mb-5 leading-relaxed text-lg">
                     Como estrategista digital e produtor de treinamentos em vídeo, a maior queixa que ouço de quem precisa gravar não é a falta de câmera boa, mas a <strong>falta de ideias validadas</strong>.
                 </p>
-                <p class="text-slate-300 leading-relaxed">
-                    Eu mesmo perdia madrugadas planejando pautas, até que decidi treinar uma Inteligência Artificial com o meu próprio método de copywriting. O que levava 3 horas de trabalho exaustivo, agora leva exatos 10 segundos.
+                <p class="text-slate-400 leading-relaxed text-lg">
+                    Eu mesmo perdia madrugadas planejando pautas, até que decidi treinar uma Inteligência Artificial com o meu próprio método de copywriting. O que levava 3 horas de trabalho exaustivo, agora leva menos de 5 minutos.
                 </p>
             </div>
-            <div class="md:w-1/2 bg-slate-950 p-8 rounded-2xl border border-slate-800 shadow-lg">
-                <h3 class="text-xl font-bold mb-4 text-blue-400">O que a IA faz por você:</h3>
-                <ul class="space-y-4">
-                    <li class="flex gap-3 items-start text-slate-300"><span class="text-blue-500">✓</span> Roteiros exatos de Reels com ganchos de retenção.</li>
-                    <li class="flex gap-3 items-start text-slate-300"><span class="text-blue-500">✓</span> Estrutura de Carrosséis para salvar e viralizar.</li>
-                    <li class="flex gap-3 items-start text-slate-300"><span class="text-blue-500">✓</span> Legendas persuasivas voltadas para conversão.</li>
+            <div class="md:w-1/2 bg-white/[0.02] backdrop-blur-md p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-[50px]"></div>
+                <h3 class="text-2xl font-bold mb-6 text-white">O que a IA faz por você:</h3>
+                <ul class="space-y-5">
+                    <li class="flex gap-4 items-start text-slate-300">
+                        <span class="bg-blue-500/20 text-blue-400 p-1.5 rounded-lg mt-0.5"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                        <span class="text-lg">Roteiros exatos de Reels com ganchos de retenção.</span>
+                    </li>
+                    <li class="flex gap-4 items-start text-slate-300">
+                        <span class="bg-blue-500/20 text-blue-400 p-1.5 rounded-lg mt-0.5"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                        <span class="text-lg">Estrutura de Carrosséis para salvar e viralizar.</span>
+                    </li>
+                    <li class="flex gap-4 items-start text-slate-300">
+                        <span class="bg-blue-500/20 text-blue-400 p-1.5 rounded-lg mt-0.5"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                        <span class="text-lg">Legendas persuasivas voltadas para conversão.</span>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO DA OFERTA (PRICING) -->
-    <section class="py-24 px-6 max-w-3xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-4">Transforme horas de criação de conteúdo em minutos.</h2>
-        <p class="text-xl text-slate-400 mb-12">Liberte seu tempo e foque no que realmente coloca dinheiro no bolso: gravar e vender.</p>
+    <!-- SEÇÃO DA OFERTA (PRICING) PREMIUM -->
+    <section class="relative z-10 py-32 px-6 max-w-4xl mx-auto text-center">
+        <!-- Luz de fundo do preço -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-700/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 relative z-10">Transforme horas de criação em <span class="text-blue-400">minutos.</span></h2>
+        <p class="text-xl text-slate-400 mb-16 max-w-2xl mx-auto relative z-10">Liberte seu tempo e foque no que realmente coloca dinheiro no bolso: gravar e vender.</p>
         
-        <div class="bg-slate-900 border border-blue-500/30 rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-hidden transform transition-all hover:scale-[1.02]">
-            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-400"></div>
+        <div class="bg-slate-900/60 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_80px_-20px_rgba(37,99,235,0.3)] relative overflow-hidden transform transition-all hover:scale-[1.01] hover:border-blue-500/30">
+            <!-- Linha luminosa no topo do card -->
+            <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50"></div>
             
             <!-- Etiqueta de Desconto -->
-            <div class="absolute top-4 right-4 bg-blue-600/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/20">
+            <div class="absolute top-6 right-6 md:top-8 md:right-8 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
                 Lançamento: 67% OFF
             </div>
 
-            <h3 class="text-2xl font-bold text-white mb-2 text-left">Acesso Anual Premium</h3>
-            <p class="text-slate-400 mb-8 text-left">Acesso imediato à nossa Inteligência Artificial treinada para conversão.</p>
+            <h3 class="text-3xl font-bold text-white mb-2 text-left">Acesso Anual Premium</h3>
+            <p class="text-slate-400 mb-10 text-left text-lg">Acesso imediato à nossa Inteligência Artificial treinada para conversão.</p>
             
-            <div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-8">
                 <div class="text-left">
-                    <div class="text-5xl font-black flex items-baseline gap-2">
-                        <span class="text-2xl font-medium text-slate-500 line-through">R$ 297</span>
-                        R$ 97<span class="text-xl text-slate-400 font-medium">,00</span>
+                    <div class="text-6xl font-black flex items-baseline gap-3">
+                        <span class="text-2xl font-medium text-slate-600 line-through">R$ 297</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-300">R$ 97</span><span class="text-2xl text-slate-400 font-medium">,00</span>
                     </div>
-                    <p class="text-blue-400 text-sm font-semibold mt-1">Pagamento Único • Acesso por 1 Ano</p>
+                    <p class="text-blue-400 text-sm font-semibold mt-2 uppercase tracking-wide">Pagamento Único • Acesso por 1 Ano</p>
                 </div>
                 
                 <!-- Botão -->
-                <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="w-full md:w-auto bg-blue-600 hover:bg-blue-500 transition-colors text-white font-bold text-lg px-8 py-4 rounded-xl shadow-[0_0_20px_-5px_rgba(37,99,235,0.5)]">
+                <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="w-full md:w-auto bg-white text-slate-950 hover:bg-blue-50 transition-colors font-extrabold text-lg px-10 py-5 rounded-2xl shadow-[0_0_30px_-5px_rgba(255,255,255,0.3)] text-center flex items-center justify-center gap-2">
                     LIBERAR MEU ACESSO
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
             </div>
 
-            <hr class="border-slate-800 mb-6">
+            <hr class="border-white/5 mb-8">
 
             <!-- Checklist de Valor -->
-            <ul class="text-left space-y-3">
+            <ul class="text-left space-y-4 grid md:grid-cols-2 gap-x-8 gap-y-2">
                 <li class="flex items-center gap-3 text-slate-300">
-                    <span class="bg-blue-900/50 text-blue-400 rounded-full p-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                    Geração de pautas semanais em 10 segundos
+                    <span class="bg-blue-500/20 text-blue-400 rounded-full p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                    Geração de pautas em menos de 5 min
                 </li>
                 <li class="flex items-center gap-3 text-slate-300">
-                    <span class="bg-blue-900/50 text-blue-400 rounded-full p-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                    Roteiros magnéticos para Reels e Shorts
+                    <span class="bg-blue-500/20 text-blue-400 rounded-full p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                    Estruturas de Carrosséis validadas
                 </li>
                 <li class="flex items-center gap-3 text-slate-300">
-                    <span class="bg-blue-900/50 text-blue-400 rounded-full p-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                    Estruturas de Carrosséis focados em retenção
+                    <span class="bg-blue-500/20 text-blue-400 rounded-full p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                    Roteiros magnéticos para Reels
+                </li>
+                <li class="flex items-center gap-3 text-slate-300">
+                    <span class="bg-blue-500/20 text-blue-400 rounded-full p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                    Legendas prontas para conversão
                 </li>
             </ul>
 
-            <div class="mt-8 flex justify-center items-center gap-2 text-sm text-slate-500">
-                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                Garantia incondicional de 7 dias. Risco zero.
+            <div class="mt-10 flex justify-center items-center gap-2 text-sm text-slate-500 bg-black/20 py-3 rounded-xl border border-white/5">
+                <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                Garantia incondicional de 7 dias. Seu risco é absolutamente zero.
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-center text-slate-600 text-sm">
+    <footer class="relative z-10 bg-slate-950 border-t border-white/5 py-12 text-center text-slate-600 text-sm">
         <p>© 2026 Social Sync IA. Todos os direitos reservados.</p>
     </footer>
 
