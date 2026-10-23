@@ -10,23 +10,19 @@
 
     <!-- BACKGROUND PREMIUM DA PÁGINA (Imagem + Degradê) -->
     <div class="absolute top-0 left-0 w-full h-[120vh] z-0 pointer-events-none">
-        <!-- Imagem abstrata com opacidade -->
         <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=2560" alt="Background" class="w-full h-full object-cover opacity-20 mix-blend-screen" />
-        <!-- Máscara para suavizar a transição para o fundo sólido -->
         <div class="absolute inset-0 bg-gradient-to-b from-slate-950/10 via-slate-950/80 to-slate-950"></div>
     </div>
 
     <!-- HEADER / HERO SECTION -->
     <header class="relative z-10 max-w-5xl mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center">
         
-        <!-- Luz de fundo (Glow) atrás do texto -->
         <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div class="inline-block bg-blue-500/10 backdrop-blur-md text-blue-300 px-5 py-2 rounded-full text-sm font-semibold mb-8 border border-blue-400/20 shadow-[0_0_20px_rgba(59,130,246,0.15)]">
             🚀 Lançamento Oficial - Vagas Limitadas
         </div>
         
-        <!-- HEADLINE ATUALIZADA: 4 LINHAS COM AJUSTE PARA CELULAR -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-[1.15] drop-shadow-lg mx-auto w-full">
             <span class="uppercase text-white">CHEGA DE TRAVAR NA <br/> CRIAÇÃO DE CONTEÚDOS.</span>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 block mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -38,7 +34,7 @@
             Tenha acesso ao meu Agente de Inteligência Artificial privado. Ele cria roteiros de Reels, Carrosséis e legendas magnéticas com um único clique.
         </p>
         
-        <!-- VIDEO PLACEHOLDER COM EFEITO VIDRO -->
+        <!-- VIDEO PLACEHOLDER -->
         <div class="w-full max-w-4xl bg-white/5 backdrop-blur-xl aspect-video rounded-3xl border border-white/10 shadow-[0_0_50px_-12px_rgba(37,99,235,0.25)] flex items-center justify-center mb-10 relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent"></div>
             <p class="text-slate-400 font-medium z-10 flex flex-col items-center gap-3">
@@ -58,7 +54,7 @@
     </header>
 
     <!-- SEÇÃO DA DOR / HISTÓRIA -->
-    <section class="relative z-10 bg-slate-950 border-y border-white/5 py-24 px-6">
+    <section class="relative z-10 bg-slate-950 border-t border-white/5 py-24 px-6">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-16 items-center">
             <div class="md:w-1/2">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">Por que eu criei o <span class="text-blue-400">Social Sync?</span></h2>
@@ -90,19 +86,89 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DA OFERTA (PRICING) PREMIUM -->
-    <section class="relative z-10 py-32 px-6 max-w-4xl mx-auto text-center">
-        <!-- Luz de fundo do preço -->
+    <!-- NOVA SEÇÃO: PROVA SOCIAL (DEPOIMENTOS) -->
+    <section class="relative z-10 bg-slate-950/80 border-t border-white/5 py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center leading-tight">O que dizem os estrategistas que <br/><span class="text-blue-400">já usam a ferramenta:</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white/[0.03] backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto Perfil" class="w-14 h-14 rounded-full border-2 border-blue-500/50">
+                        <div>
+                            <h4 class="font-bold text-white">Thiago S.</h4>
+                            <p class="text-xs text-blue-400 font-medium">Empreendedor Digital</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Antes eu passava o domingo inteiro tentando escrever os roteiros da semana. Agora, em menos de 5 minutos eu resolvo todo o meu mês. A qualidade dos ganchos para segurar a atenção é absurda."
+                    </p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white/[0.03] backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Perfil" class="w-14 h-14 rounded-full border-2 border-blue-500/50">
+                        <div>
+                            <h4 class="font-bold text-white">Mariana Costa</h4>
+                            <p class="text-xs text-blue-400 font-medium">Social Media</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Já testei de tudo, mas o ChatGPT normal entregava textos muito robóticos e chatos. O Social Sync já vem com a estrutura de Copywright pronta para conversão. Simplesmente mudou meu jogo no Instagram."
+                    </p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white/[0.03] backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/74.jpg" alt="Foto Perfil" class="w-14 h-14 rounded-full border-2 border-blue-500/50">
+                        <div>
+                            <h4 class="font-bold text-white">Rafael Mendes</h4>
+                            <p class="text-xs text-blue-400 font-medium">Corretor de Imóveis</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Não sou criativo para aparecer na internet e sempre travava. A ferramenta pegou na minha mão e gerou roteiros de vídeos em massa que me trouxeram clientes reais. Vale cada centavo investido!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DA OFERTA (PRICING) PREMIUM + SELO DE GARANTIA -->
+    <section class="relative z-10 py-24 px-6 max-w-4xl mx-auto text-center">
+        
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-700/10 rounded-full blur-[150px] pointer-events-none"></div>
 
         <h2 class="text-4xl md:text-5xl font-bold mb-6 relative z-10">Transforme horas de criação em <span class="text-blue-400">minutos.</span></h2>
         <p class="text-xl text-slate-400 mb-16 max-w-2xl mx-auto relative z-10">Liberte seu tempo e foque no que realmente coloca dinheiro no bolso: gravar e vender.</p>
         
         <div class="bg-slate-900/60 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_80px_-20px_rgba(37,99,235,0.3)] relative overflow-hidden transform transition-all hover:scale-[1.01] hover:border-blue-500/30">
-            <!-- Linha luminosa no topo do card -->
             <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50"></div>
             
-            <!-- Etiqueta de Desconto -->
             <div class="absolute top-6 right-6 md:top-8 md:right-8 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
                 Lançamento: 67% OFF
             </div>
@@ -119,7 +185,6 @@
                     <p class="text-blue-400 text-sm font-semibold mt-2 uppercase tracking-wide">Pagamento Único • Acesso por 1 Ano</p>
                 </div>
                 
-                <!-- Botão -->
                 <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="w-full md:w-auto bg-white text-slate-950 hover:bg-blue-50 transition-colors font-extrabold text-lg px-10 py-5 rounded-2xl shadow-[0_0_30px_-5px_rgba(255,255,255,0.3)] text-center flex items-center justify-center gap-2">
                     LIBERAR MEU ACESSO
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -128,8 +193,7 @@
 
             <hr class="border-white/5 mb-8">
 
-            <!-- Checklist de Valor -->
-            <ul class="text-left space-y-4 grid md:grid-cols-2 gap-x-8 gap-y-2">
+            <ul class="text-left space-y-4 grid md:grid-cols-2 gap-x-8 gap-y-2 mb-10">
                 <li class="flex items-center gap-3 text-slate-300">
                     <span class="bg-blue-500/20 text-blue-400 rounded-full p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
                     Geração de pautas em menos de 5 min
@@ -148,10 +212,17 @@
                 </li>
             </ul>
 
-            <div class="mt-10 flex justify-center items-center gap-2 text-sm text-slate-500 bg-black/20 py-3 rounded-xl border border-white/5">
-                <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                Garantia incondicional de 7 dias. Seu risco é absolutamente zero.
+            <!-- NOVO: SELO DE GARANTIA EM DESTAQUE -->
+            <div class="bg-gradient-to-r from-green-900/40 to-slate-900/40 border border-green-500/30 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 text-left">
+                <div class="flex-shrink-0 bg-green-500/20 p-4 rounded-full">
+                    <svg class="w-12 h-12 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">Garantia Incondicional de 7 Dias</h4>
+                    <p class="text-sm text-slate-300">Se você não economizar horas de trabalho logo no primeiro acesso ou não gostar dos roteiros gerados, devolvemos 100% do seu dinheiro com apenas um clique. <strong>O risco é totalmente nosso.</strong></p>
+                </div>
             </div>
+
         </div>
     </section>
 
