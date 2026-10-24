@@ -1,136 +1,127 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Turbo IA - Crie 7 Dias de Conteúdos</title>
+    <!-- O script abaixo carrega todo o design automaticamente -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans selection:bg-blue-200 selection:text-blue-900">
 
-export default function LandingPage() {
-  // Substitua esta variável pelo seu link real de checkout da Kiwify
-  const linkKiwify = "https://pay.kiwify.com.br/SEU_LINK_AQUI";
-
-  return (
-    <div className="min-h-screen bg-gray-50 font-sans selection:bg-blue-200 selection:text-blue-900">
-      
-      {/* CABEÇALHO / HERO SECTION */}
-      <header className="bg-white border-b border-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center justify-center p-3 bg-blue-50 rounded-2xl mb-6 shadow-sm">
-            <span className="text-4xl">📅🚀</span>
-          </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
-            Crie 7 Dias de Conteúdos que Vendem em <span className="text-blue-600">Apenas 10 Segundos</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-            Diga adeus ao bloqueio criativo. O Calendário Turbo IA gera copies persuasivas, ideias visuais e roteiros completos para o seu nicho com um único clique.
-          </p>
-          
-          {/* BOTÃO KIWIFY 1 */}
-          <a 
-            href={linkKiwify}
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all transform hover:-translate-y-1"
-          >
-            Quero O Meu Acesso Agora
-          </a>
-          <p className="text-sm text-gray-400 mt-4 font-medium">✓ Pagamento seguro • Acesso imediato</p>
+    <!-- CABEÇALHO / HERO SECTION -->
+    <header class="bg-white border-b border-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-flex items-center justify-center p-3 bg-blue-50 rounded-2xl mb-6 shadow-sm">
+                <span class="text-4xl">📅🚀</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+                Crie 7 Dias de Conteúdos que Vendem em <span class="text-blue-600">Apenas 10 Segundos</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
+                Diga adeus ao bloqueio criativo. O Calendário Turbo IA gera copies persuasivas, ideias visuais e roteiros completos para o seu nicho com um único clique.
+            </p>
+            
+            <!-- BOTÃO KIWIFY 1 (Substitua o link no href) -->
+            <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                Quero O Meu Acesso Agora
+            </a>
+            <p class="text-sm text-gray-400 mt-4 font-medium">✓ Pagamento seguro • Acesso imediato</p>
         </div>
-      </header>
+    </header>
 
-      {/* SEÇÃO: MOSTRANDO O SISTEMA (Substitui o VSL) */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Veja a Máquina a Funcionar</h2>
-          <p className="text-gray-500 text-lg">Sem complicações. Você preenche 3 campos e a nossa IA faz o trabalho pesado.</p>
+    <!-- SEÇÃO: MOSTRANDO O SISTEMA (Substitui o VSL) -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Veja a Máquina a Funcionar</h2>
+            <p class="text-gray-500 text-lg">Sem complicações. Você preenche 3 campos e a nossa IA faz o trabalho pesado.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          
-          {/* Mockup do Formulário */}
-          <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 relative transform transition hover:scale-[1.02]">
-            <div className="absolute -top-4 -left-4 bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">
-              1. Você Preenche
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Mockup do Formulário -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 relative transform transition hover:scale-[1.02]">
+                <div class="absolute -top-4 -left-4 bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">
+                    1. Você Preenche
+                </div>
+                <div class="space-y-4 opacity-95">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Qual é o seu nicho?</label>
+                        <div class="bg-gray-50 border border-gray-200 p-3 rounded-lg text-gray-700 font-medium">Corretor de Imóveis</div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 uppercase mb-1">Objetivo da Campanha</label>
+                        <div class="bg-gray-50 border border-gray-200 p-3 rounded-lg text-gray-700 font-medium">💰 Vender (Fundo de Funil)</div>
+                    </div>
+                    <div class="w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold mt-4 shadow-sm">
+                        🗓️ Gerar O Meu Calendário
+                    </div>
+                </div>
             </div>
-            <div className="space-y-4 opacity-95">
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase mb-1">Qual é o seu nicho?</label>
-                <div className="bg-gray-50 border border-gray-200 p-3 rounded-lg text-gray-700 font-medium">Corretor de Imóveis</div>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase mb-1">Objetivo da Campanha</label>
-                <div className="bg-gray-50 border border-gray-200 p-3 rounded-lg text-gray-700 font-medium">💰 Vender (Fundo de Funil)</div>
-              </div>
-              <div className="w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold mt-4 shadow-sm">
-                🗓️ Gerar O Meu Calendário
-              </div>
-            </div>
-          </div>
 
-          {/* Mockup do Resultado */}
-          <div className="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 relative transform transition hover:scale-[1.02]">
-            <div className="absolute -top-4 -right-4 bg-green-500 text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">
-              2. A IA Entrega Pronto
+            <!-- Mockup do Resultado -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 relative transform transition hover:scale-[1.02]">
+                <div class="absolute -top-4 -right-4 bg-green-500 text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">
+                    2. A IA Entrega Pronto
+                </div>
+                <div class="border-l-4 border-blue-500 pl-4 py-2">
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1 block">Dia 1 • Reels</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">"O detalhe que esconde o valor da sua casa"</h3>
+                    <p class="text-sm text-gray-600 line-clamp-3 mb-3">
+                        <span class="font-semibold text-gray-800">Roteiro:</span> [Começa a gravar abrindo a porta principal] "Sabia que a primeira impressão do comprador acontece nos 3 primeiros segundos?..."
+                    </p>
+                    <p class="text-xs font-mono text-blue-500">#MercadoImobiliario #VendaSeuImovel</p>
+                </div>
             </div>
-            <div className="border-l-4 border-blue-500 pl-4 py-2">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1 block">Dia 1 • Reels</span>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">"O detalhe que esconde o valor da sua casa"</h3>
-              <p className="text-sm text-gray-600 line-clamp-3 mb-3">
-                <span className="font-semibold text-gray-800">Roteiro:</span> [Começa a gravar abrindo a porta principal] "Sabia que a primeira impressão do comprador acontece nos 3 primeiros segundos?..."
-              </p>
-              <p className="text-xs font-mono text-blue-500">#MercadoImobiliario #VendaSeuImovel</p>
-            </div>
-          </div>
 
         </div>
-      </section>
+    </section>
 
-      {/* SEÇÃO DE BENEFÍCIOS (3 Passos) */}
-      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="text-5xl mb-4 transform transition hover:scale-110">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Estratégia Real</h3>
-              <p className="text-gray-500">Deixe de postar ao acaso. Tenha funis de venda estruturados para Topo, Meio e Fundo de funil.</p>
+    <!-- SEÇÃO DE BENEFÍCIOS (3 Passos) -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-5xl mb-4 transform transition hover:scale-110">🎯</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Estratégia Real</h3>
+                    <p class="text-gray-500">Deixe de postar ao acaso. Tenha funis de venda estruturados para Topo, Meio e Fundo de funil.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl mb-4 transform transition hover:scale-110">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pronto a Usar</h3>
+                    <p class="text-gray-500">Receba roteiros para vídeos e copies persuasivas. É só ler, gravar e publicar.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl mb-4 transform transition hover:scale-110">📱</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">100% Mobile</h3>
+                    <p class="text-gray-500">Não precisa de computador. Gere as suas campanhas de onde estiver, direto do telemóvel.</p>
+                </div>
             </div>
-            <div className="p-6">
-              <div className="text-5xl mb-4 transform transition hover:scale-110">⚡</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Pronto a Usar</h3>
-              <p className="text-gray-500">Receba roteiros para vídeos e copies persuasivas. É só ler, gravar e publicar.</p>
-            </div>
-            <div className="p-6">
-              <div className="text-5xl mb-4 transform transition hover:scale-110">📱</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">100% Mobile</h3>
-              <p className="text-gray-500">Não precisa de computador. Gere as suas campanhas de onde estiver, direto do telemóvel.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      {/* CALL TO ACTION FINAL */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900 text-center relative overflow-hidden">
-        {/* Efeito de fundo */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full bg-blue-900 opacity-20 blur-3xl rounded-full"></div>
+    <!-- CALL TO ACTION FINAL -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900 text-center relative overflow-hidden">
+        <!-- Efeito de fundo -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full bg-blue-900 opacity-20 blur-3xl rounded-full"></div>
         
-        <div className="max-w-3xl mx-auto relative z-10">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">Pronto para dominar o seu mercado?</h2>
-          <p className="text-blue-200 text-lg mb-10 max-w-xl mx-auto">
-            Junte-se aos profissionais que estão a automatizar a criação de conteúdo e a focar no que realmente importa: fechar negócios e aumentar vendas.
-          </p>
-          
-          {/* BOTÃO KIWIFY 2 */}
-          <a 
-            href={linkKiwify}
-            target="_blank"
-            rel="noopener noreferrer" 
-            className="inline-block bg-green-500 text-white font-extrabold text-xl px-12 py-5 rounded-2xl shadow-2xl hover:bg-green-400 hover:scale-105 transition-all duration-300 ring-4 ring-green-500 ring-opacity-30"
-          >
-            Desbloquear o Meu Acesso Agora
-          </a>
-          <p className="text-slate-400 text-sm mt-6 flex items-center justify-center gap-2">
-            <span>🔒 Pagamento processado pela Kiwify</span>
-            <span>•</span>
-            <span>Acesso vitalício</span>
-          </p>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Pronto para dominar o seu mercado?</h2>
+            <p class="text-blue-200 text-lg mb-10 max-w-xl mx-auto">
+                Junte-se aos profissionais que estão a automatizar a criação de conteúdo e a focar no que realmente importa: fechar negócios e aumentar vendas.
+            </p>
+            
+            <!-- BOTÃO KIWIFY 2 (Substitua o link no href) -->
+            <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 text-white font-extrabold text-xl px-12 py-5 rounded-2xl shadow-2xl hover:bg-green-400 hover:scale-105 transition-all duration-300 ring-4 ring-green-500 ring-opacity-30">
+                Desbloquear o Meu Acesso Agora
+            </a>
+            <p class="text-slate-400 text-sm mt-6 flex items-center justify-center gap-2">
+                <span>🔒 Pagamento processado pela Kiwify</span>
+                <span class="mx-2">•</span>
+                <span>Acesso vitalício</span>
+            </p>
         </div>
-      </section>
+    </section>
 
-    </div>
-  );
-}
+</body>
+</html>
